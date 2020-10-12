@@ -1,3 +1,13 @@
+# About this branch:
+
+Software remapping of the keys is preferred by people who use macOS' DVQW layout (or the equivalent on Linux). However, due to the unique arrangement of some punction and symbol keys on the Model 01, using standard software keymaps with the Model 01 leads to aberrant results.
+
+This branch has specific remappings so that when the QWERTY-based `PRIMARY_KEYMAP_CUSTOM` macro is used with an OS's Dvorak (or DVQW) layout, the expected remappings occur for the `=`, `+`, `-`, `[`, `]`, `/`, `\`, and `|` keys.
+Additionally, extra changes are added so that holding the function key while pressing the keys that have `{`, `}`, `[`, and `]` physically printed on them will result in the relevant characters.
+
+The differences and how this is achieved are fully outlined in the commit message of [91e9a650fdf2a933e0ea06163353a830141d6c1d](https://github.com/aoeu/Model01-Firmware/commit/91e9a650fdf2a933e0ea06163353a830141d6c1d).
+
+
 # Keyboardio Model 01 Firmware
 
 _The default firmware for the Keyboardio Model 01_
